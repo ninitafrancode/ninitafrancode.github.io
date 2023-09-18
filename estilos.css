@@ -1,0 +1,480 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: #e7d2f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color:#ffa6ff;
+  color: #090808;
+  padding: 20px;
+  width: 100%;
+  height: 170px;
+
+}
+
+
+/* Estilos para el menú de navegación en tamaños de vista normales */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: #100101; /* Cambia el color del texto a blanco */
+  text-decoration: none;
+  transition: color 0.5s;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+  color: #a474e6;
+}
+
+/* Media query para tamaños de vista móvil (hasta 768px, puedes ajustar el valor según tus necesidades) */
+@media screen and (max-width: 768px) {
+ 
+  nav ul li {
+    
+    margin-right: 10px; /* Elimina el margen derecho en pantallas móviles */
+    margin-bottom: 10px; /* Agrega un espacio entre cada elemento en pantallas móviles */
+    font-size: 16px;
+  }
+}
+
+
+/* Estilos para el logo en tamaños de vista normales */
+.logo img {
+  height: 100px;
+  margin-top: 10px;
+  padding-left: 300px;
+  width: auto;
+}
+
+/* Media query para tamaños de vista móvil (hasta 768px, puedes ajustar el valor según tus necesidades) */
+@media screen and (max-width: 768px) {
+  .logo img {
+    height: 90px; /* Ajusta el tamaño de altura para pantallas móviles */
+    padding-left: 10px; /* Ajusta el espacio izquierdo para pantallas móviles */
+    width: auto;
+  }
+}
+.tex-bienvenida {
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 1300px;
+}
+
+/* Media query para tamaños de vista móvil (hasta 768px, puedes ajustar el valor según tus necesidades) */
+@media screen and (max-width: 768px) {
+  .tex-bienvenida {
+    font-size: 20px; /* Ajusta el tamaño de fuente para pantallas móviles */
+    word-wrap: break-word;
+  }
+}
+.content {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: none;
+  background-color: #e7d2f0;
+}
+
+.app-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.text {
+  text-align: center;
+  background: #8CA6DB;
+  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
+  background: linear-gradient(to right, #b9c9e8, #efb7ea);
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.titulopro  {
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 60px;
+  
+}
+
+.text p {
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  width: 1400px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+ 
+
+  
+}
+
+.text-content {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20px;
+  margin-bottom: 10px;
+ min-width: 450px;
+ max-width: 1500px;
+
+
+}
+
+/* Media query para tamaños de vista móvil (hasta 768px, puedes ajustar el valor según tus necesidades) */
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 20px; /* Ajusta el tamaño de fuente para pantallas móviles */
+  }
+
+  .titulopro  {
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .text h1 {
+    font-size: 10px; /* Ajusta el tamaño de fuente para pantallas móviles */
+    margin-bottom: 20px; /* Ajusta el margen inferior para pantallas móviles */
+   
+  }
+
+
+  .text-content {
+    font-size: 20px; /* Ajusta el tamaño de fuente para pantallas móviles */
+    padding: auto; /* Ajusta el espacio de padding para pantallas móviles */
+    margin-bottom: 40px; /* Reduce el margen inferior para pantallas móviles */
+     margin: 30px;
+  }
+}
+
+
+.download-button {
+  display: inline-block;
+  padding: 15px 20px 15px 30px;
+  background-color: #08e0e4;
+  color: #060606;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: color 0.3s;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.app-imagenes img {
+  width: 80%;
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background: #eee6f1;;
+}
+
+.feature-card {
+  width: 300px;
+  background: #f9f6fb;
+  padding: 40px;
+  text-align: center;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.feature-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.texto-motivacional {
+  color: #0e0d0d;
+  font-size: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20px;
+  margin-top: 50px;
+ max-width: 1500px;
+
+}
+
+/* Media query para tamaños de vista móvil (hasta 768px, puedes ajustar el valor según tus necesidades) */
+@media screen and (max-width: 768px) {
+  .texto-motivacional {
+    font-size: 20px; /* Ajusta el tamaño de fuente para pantallas móviles */
+    margin-bottom: 30px; /* Ajusta el margen inferior para pantallas móviles */
+    padding: 0 10px; /* Ajusta el espacio de padding para pantallas móviles */
+    margin-top: 30px; /* Ajusta el margen superior para pantallas móviles */
+    align-items: center;
+  }
+
+  .text-content {
+
+    padding: auto;
+  }
+  
+}
+
+
+.experiencias-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #e7d2f0;;
+  margin-right: 30px;
+}
+
+.experiencia-card {
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  align-items: baseline;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.experiencia-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experiencia-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.experiencias-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.experiencia-card {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0ebf4;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.final {
+  background-color: #10032d;
+  color: #f6f3f5;
+  font-size: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+
+footer{
+  width: 70%;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 20px;
+  width: 100%;
+ 
+}
+
+.footer-logo img {
+  width: 200px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.final {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+footer {
+  padding: 10px;
+}
+
+.experiencia-texto{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Estilos para los enlaces en .footer-social y .footer-links */
+.footer-social a,
+.footer-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+.footer-social a {
+  margin: 0 5px;
+}
+
+.footer-social img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.footer-links {
+  text-align: right;
+}
+
+.footer-links a {
+  margin-left: 10px;
+}
+
+/* Media query para tamaños de vista móvil (hasta 768px, puedes ajustar el valor según tus necesidades) */
+/* Estilos para los enlaces en .footer-social y .footer-links */
+.footer-social a,
+.footer-links a {
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-social a {
+  display: block;
+  margin: 5px auto;
+}
+
+.footer-social img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links a {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* Media query para tamaños de vista móvil (hasta 768px, puedes ajustar el valor según tus necesidades) */
+@media screen and (max-width: 768px) {
+  .footer-social {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-social a {
+    margin: 5px auto;
+  }
+
+  .footer-social img {
+    margin-right: 0;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-links a {
+    margin-left: 0;
+   
+  }
+  .footer-social img {
+    width: 15px;
+    margin-right: 20px;
+  }
+
+  .footer-logo img {
+    height: 90px;
+   padding: 10px;
+    width: auto;
+    margin-top: 10px; /* Agrega un margen superior para separar el logo de los enlaces */
+  }
+
+  .footer-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+  }
+
+  footer{
+    width: 100%;
+  }
+}
+
+  
+

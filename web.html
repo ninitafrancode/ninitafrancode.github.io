@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviwes Plus</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+    
+      document.addEventListener('DOMContentLoaded', function() {
+        // Observador de intersección
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+  
+        // Selecciona todas las cards de experiencia de usuario
+        const experienciaCards = document.querySelectorAll('.experiencia-card');
+  
+        // Observa cada card
+        experienciaCards.forEach(card => {
+          observer.observe(card);
+        });
+      });
+    </script>
+</head>
+<body>
+        <header>
+          <div class="logo" id="Inicio">
+            <a href="web.html">
+                <img src="./img/Frame 8 (2).png" alt="Logo de la aplicación">
+            </a>
+        </div>
+        
+          
+        <nav>
+          
+          
+            <ul>
+              <li><a href="loging.html">Inicio</a></li>
+            <li><a href="#features">Características</a></li>
+            <li><a href="https://drive.google.com/file/d/11Xj9uIiTLDUEPmwHinvZ34og-BmMR9ll/view?usp=sharing">Descargar</a></li>
+            <li><a href="sobremi.html"> Sobre mi </a></li>
+            </ul>
+        </nav>
+        </header>
+        <!-- El contenido principal de tu página vendría aquí -->
+
+
+          
+            <section>
+
+              <!-- Video -->
+              <video id="video" controls>
+                 <source src="./img/videoapp.mp4" type="video/mp4">
+                 Tu navegador no soporta el elemento de video.
+             </video>
+            </section>
+            
+           
+              <div class="text-content">
+                <h1 class="titulopro">¡Descarga nuestra increíble aplicación!</h1>
+                <p class="text-content" >En nuestra aplicación, encontrarás todos los lugares de belleza que siempre has deseado visitar. 
+                    Desde barberías con estilos únicos hasta estudios de tatuajes con artistas talentosos, 
+                    pasando por peluquerías que te brindarán el look perfecto y
+                     maquilladores profesionales que resaltarán tu belleza interior  y muchos mas .
+                    
+                     Lo que hace que nuestra aplicación sea única es que todos los lugares recomendados provienen de usuarios y clientes reales, como tú. 
+                     Creemos en el poder de la comunidad y en compartir experiencias auténticas.
+                      Así que,
+                       cada recomendación que encuentres ha sido dejada por alguien que ha vivido una experiencia increíble en ese lugar y desea compartirlo contigo.
+                    
+                    </p>
+                <a href="https://drive.google.com/file/d/11Xj9uIiTLDUEPmwHinvZ34og-BmMR9ll/view?usp=sharing" class="download-button"id="descargar">Descargar Aplicación</a>
+
+                <div class="app-imagenes"><img src="./img/Frame 9 (1).png" alt="Imagen de la aplicación">
+                     <p class="text-content">No solo encontrarás recomendaciones de lugares, sino que también te mostraremos los mejores
+                         y más confiables establecimientos para realizarte cualquier procedimiento que desees. 
+                         Queremos que te sientas seguro y tranquilo al elegir el lugar adecuado para tus necesidades. 
+                         </p>              
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="features-section"id="features">
+            
+            <div class="feature-card">
+              <img src="./img/ubicacion.png" alt="Imagen de la característica 2">
+              <h3>Encuentra </h3>
+              <p>Por medio de nuestra app vas a poder ver los mejores lugares de belleza de toda colombia. </p>
+            </div>
+            
+            <!-- Repite los bloques de código para las demás características -->
+            
+            <div class="feature-card">
+              <img src="./img/tableta-de-dibujo.png" alt="Imagen de la característica 6">
+              <h3>Reseña  </h3>
+              <p>nos enfocamos en crear una experiencia feliz, optimista y confiable para cada usuario. 
+                Queremos que sientas confianza en cada lugar al que vayas y que te sientas motivado a descubrir nuevos destinos de belleza.
+                 ¡Tu satisfacción y bienestar son nuestra prioridad!. </p>
+            </div>
+
+            <div class="feature-card">
+                <img src="./img/hombre-de-influencia.png" alt="Imagen de la característica 6">
+                <h3>Emprende  </h3>
+                <p> Si eres profesional independiente , o emprendimiento en el campo de la belleza puedes registrar tu negocio y hacerlo crecer . </p>
+              </div>
+
+              <div class="feature-card">
+                <img src="./img/grupo-de-chat.png" alt="Imagen de la característica 6">
+                <h3>Comparte</h3>
+                <p>Lo más emocionante de Reviews Plus es la comunidad que hemos construido. Queremos que te sientas parte de algo más grande y puedas compartir tu experiencia </p>
+              </div>
+
+              <p class="texto-motivacional ">No esperes más y únete a la comunidad de Reviews Plus. 
+                Descarga nuestra aplicación ahora y descubre un mundo de reseñas confiables, conexiones significativas y motivación constante.
+                 ¡Te esperamos con los brazos abiertos para que formes parte de nuestra comunidad de belleza vibrante y positiva!</p>
+                
+          </div>
+          
+
+
+          <div class="experiencias-section" id="experiencias">
+           
+            
+            
+            <div class="experiencia-card">
+                <img src="./img/Avatar (5).png" alt="Avatar de Carlos">
+                <p class="nombre-usuario">Carlos</p>
+                <p class="experiencia-texto">"Reviews Plus me salvó de una mala experiencia en un spa. Antes de reservar, revisé las reseñas y encontré algunos comentarios negativos. Decidí buscar otro lugar y encontré uno fantástico. ¡Gracias a Reviews Plus, evité una mala experiencia y encontré un spa increíble!"</p>
+            </div>
+            
+            <div class="experiencia-card">
+                <img src="./img/Avatar (6).png" alt="Avatar de Laura">
+                <p class="nombre-usuario">Laura</p>
+                <p class="experiencia-texto">"La comunidad de Reviews Plus me ha inspirado a probar nuevos tratamientos faciales. Gracias a las fotos y comentarios de otros usuarios, me animé a probar un facial de hidratación profunda y los resultados han sido asombrosos. Me encanta compartir mis experiencias y aprender de los demás."</p>
+            </div>
+            
+            <div class="experiencia-card">
+                <img src="./img/Avatar (7).png" alt="Avatar de David">
+                <p class="nombre-usuario">David</p>
+                <p class="experiencia-texto">"Soy estilista y he encontrado en Reviews Plus una excelente plataforma para promocionar mi negocio. Las reseñas positivas de mis clientes han atraído a nuevos clientes y he visto crecer mi clientela. Es una gran herramienta para construir confianza y dar a conocer mis servicios."</p>
+            </div>
+            
+            <div class="experiencia-card">
+                <img src="./img/image 10.jpg" alt="Avatar de Sofía">
+                <p class="nombre-usuario">Sofía</p>
+                <p class="experiencia-texto">"Reviews Plus me ha ayudado a descubrir tendencias y técnicas de maquillaje. La comunidad comparte tutoriales y consejos, lo cual me ha permitido mejorar mis habilidades de maquillaje. Me siento más segura y confiada al experimentar con nuevos estilos. y verme hermosa cada dia "</p>
+            </div>
+            
+        </div>
+        
+        
+
+
+          <footer>
+            <div class="footer-container">
+              <div class="footer-logo">
+                <a href="web.html">
+                <img src="./img/Frame 8 (2).png" alt="Logo del sitio"></a>
+              </div>
+
+
+              <div class="footer-social">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img src="./img/instagram (4).png" alt="Icono de Facebook">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img src="./img/whatsapp (2).png" alt="Icono de Twitter">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img src="./img/facebook (1).png" alt="Icono de Instagram">
+                </a>
+              </div>
+              <div class="footer-links">
+                <section id="inicio">  <a href="#inicio">Inicio</a</section>
+               
+                <a href="#">Acerca de nosotros</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+              </div>
+            </div>
+          </footer>
+          
+    </body>
+    </html>
+    
